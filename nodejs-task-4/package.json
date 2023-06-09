@@ -5,11 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.4.0"
+    "axios": "^1.4.0",
+    "dotenv": "^16.1.4"
   }
 }
