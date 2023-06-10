@@ -21,6 +21,19 @@ export const getCityByQuery = async (q) => {
     console.error(error);
   }
 };
+export const getCityByCords = async ({ lat, lon }) => {
+  try {
+    const response = await api.get("/geo/1.0/reverse", {
+      params: {
+        lat,
+        lon,
+      },
+    });
+    return response.data;
+  } catch (error) {
+    console.error(error);
+  }
+};
 
 export const getWather = async ({ lat, lon }) => {
   try {
