@@ -24,8 +24,8 @@ const flatDataAll = data.flatMap((elem) => {
 
 const uniuniqueWord = [...new Set(flatDataAll)];
 
-console.log(uniuniqueWord.length);
-console.log(existInFiles(wordsCollection, 20));
-console.log(existInFiles(wordsCollection, 10));
+console.log(uniuniqueWord.length + "Укальні слова");
+console.log(existInFiles(wordsCollection, 20) + "Слова в 20 файлах");
+console.log(existInFiles(wordsCollection, 10) + "Слова в 10 файлах");
 
 console.timeEnd("Execution Time");
